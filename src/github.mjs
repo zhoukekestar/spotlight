@@ -23,6 +23,9 @@ try {
   ).content;
 
   console.log(`\n\n###\n\nHey! You are ${githubName} 🎉\n\n###\n\n`);
+
+  // https://developer.apple.com/library/archive/documentation/LanguagesUtilities/Conceptual/MacAutomationScriptingGuide/DisplayDialogsandAlerts.html
+  $`osascript -l JavaScript -e 'var app = Application.currentApplication();app.includeStandardAdditions = true;var dialogText = "Hey! You are ${githubName} 🎉";app.displayDialog(dialogText);'`
 } catch (err) {
   spinner.text = '网络异常！';
 }
