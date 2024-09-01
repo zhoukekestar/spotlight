@@ -3,7 +3,9 @@
 # Quick Start
 
 ```sh
-$ git clone 
+$ cd ~
+$ git clone git@github.com:zhoukekestar/spotlight.git
+$ cd spotlight
 $ npm i
 ```
 
