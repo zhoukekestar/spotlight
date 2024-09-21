@@ -26,7 +26,7 @@ on captureImage()
 
 		return editedText
 	on error
-		display alert "錯誤" message "沒有找到文字"
+		display alert "error" message "no text found"
 		(fileManager's removeItemAtPath:tempImage |error|:(missing value))
 		return missing value
 	end try
@@ -50,7 +50,7 @@ end recognitionText
 
 -- 顯示帶有輸入框的對話框
 on displayEditableDialog(defaultText)
-	set dialogResult to display dialog "" default answer defaultText buttons {"確定"} default button "確定" with title "辨識結果"
+	set dialogResult to display dialog "" default answer defaultText buttons {"OK"} default button "OK" with title "Result"
 
 	-- 取得編輯後的文本
 	set editedText to text returned of dialogResult
