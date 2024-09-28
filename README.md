@@ -13,7 +13,7 @@ $ npm i
 
 # 演示
 
-![](https://github.com/user-attachments/assets/82d8dd81-58b2-4847-b779-a861492d4c9d)
+![](https://github.com/user-attachments/assets/6841a79b-6cb8-4d3a-8aaa-81614c076451)
 
 # 参考
 
